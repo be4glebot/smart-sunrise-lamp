@@ -19,7 +19,7 @@ Built for a deep sleeper who wears earplugs: light gets through where sound does
 | Part | Notes |
 |---|---|
 | ESP32 dev board (ELEGOO ESP-32 kit, CP2102 USB chip) | 2.4 GHz Wi-Fi only |
-| WS2812B addressable LED strip, 5V, 60 LEDs/m | first 80 LEDs used (about 1.35 m, mounted along a full-size headboard) |
+| WS2812B addressable LED strip, 5V, 60 LEDs/m | first 120 LEDs used (2 m, along a full-size headboard with a wrap down each side); cut at a 50 cm joint |
 | 5V 3A power adapter | powers the strip only |
 | 330 ohm resistor | on the data line |
 | Momentary push button | between GPIO 13 and GND |
@@ -50,7 +50,7 @@ Settings you can change in the sketch: `LED_COUNT`, `BRIGHTNESS` (0 to 255), `AU
 ## Notes
 
 - The ESP32 only supports 2.4 GHz Wi-Fi. Some managed networks (such as apartment Wi-Fi) isolate devices from each other, which can stop a phone from reaching the lamp.
-- Keep the strip stretched out or loosely wrapped while powered, since coiled strips shed heat poorly. With 80 LEDs, keep `BRIGHTNESS` at 120 or lower so a 3 A adapter has headroom.
+- Keep the strip stretched out or loosely wrapped while powered, since coiled strips shed heat poorly. With 120 LEDs, keep `BRIGHTNESS` at 90 or lower so a 3 A adapter has headroom (worst case, all white, is about 2.5 A at 90).
 
 ## Tech
 

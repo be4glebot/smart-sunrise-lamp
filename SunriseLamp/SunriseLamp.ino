@@ -11,8 +11,8 @@ const char* WIFI_PASSWORD = "YOUR_WIFI_PASSWORD";
 // ==================================
 
 #define LED_PIN           4     // ESP32 pin wired to the strip's data wire (through the 330 ohm resistor)
-#define LED_COUNT         80    // how many LEDs the lamp uses (80 = about 1.35 m along a full-size headboard)
-#define BRIGHTNESS        120   // brightness cap, 0-255 (120 is about 47%)
+#define LED_COUNT         120   // how many LEDs the lamp uses (120 = 2 m: a full-size headboard plus a wrap down each side)
+#define BRIGHTNESS        90    // brightness cap, 0-255 (90 is about 35%; keeps 120 LEDs under 3 A on a 3 A adapter)
 #define BUTTON_PIN        13    // button wired between this pin and GND
 #define AUTO_OFF_MINUTES  30    // how long the lamp stays at full brightness before shutting off
 
