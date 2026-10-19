@@ -447,6 +447,8 @@ void setup() {
 
   WiFi.mode(WIFI_STA);
   WiFi.setHostname(HOSTNAME);
+  WiFi.setScanMethod(WIFI_ALL_CHANNEL_SCAN);        // look at every access point first
+  WiFi.setSortMethod(WIFI_CONNECT_AP_BY_SIGNAL);    // then join the strongest one
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
   configTzTime(TIMEZONE, "pool.ntp.org", "time.nist.gov");   // gets the time from the internet
 
